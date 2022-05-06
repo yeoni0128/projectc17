@@ -77,7 +77,7 @@ function draw() {
   if(gameState===PLAY){
     
    distance = distance + Math.round(getFrameRate()/50);
-   path.velocityX = -(6 + 200*distance/150);
+   path.velocityX = -(6 + 2*distance/150);
   
    mainCyclist.y = World.mouseY;
   
@@ -166,7 +166,7 @@ function draw() {
 function pinkCyclists(){
         player1 =createSprite(1100,Math.round(random(50, 250)));
         player1.scale =0.06;
-        player1.velocityX = -(6 + 200*distance/150);
+        player1.velocityX = -(6 + 2*distance/150);
         player1.addAnimation("opponentPlayer1",oppPink1Img);
         player1.setLifetime=170;
         pinkCG.add(player1);
@@ -175,7 +175,7 @@ function pinkCyclists(){
 function yellowCyclists(){
         player2 =createSprite(1100,Math.round(random(50, 250)));
         player2.scale =0.06;
-        player2.velocityX = -(6 + 200*distance/150);
+        player2.velocityX = -(6 + 2*distance/150);
         player2.addAnimation("opponentPlayer2",oppYellow1Img);
         player2.setLifetime=170;
         yellowCG.add(player2);
@@ -184,7 +184,7 @@ function yellowCyclists(){
 function redCyclists(){
         player3 =createSprite(1100,Math.round(random(50, 250)));
         player3.scale =0.06;
-        player3.velocityX = -(6 + 200*distance/150);
+        player3.velocityX = -(6 + 2*distance/150);
         player3.addAnimation("opponentPlayer3",oppRed1Img);
         player3.setLifetime=170;
         redCG.add(player3);
